@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+          <!-- Brand Logo -->
+          <div class="brand-logo">
+            <img src="brand-logo.png" alt="Justine Batter Logo" />
+          </div>
+
+          <div class="nav-actions">
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+              <li><a href="#">Home</a></li>
+              <li><a href="about_us.html" target="_blank">About</a></li>
+              <li><a href="services.html" target="_blank">Services</a></li>
+              <li><a href="courses.html" target="_blank">Courses</a></li>
+              <li><a href="tutorials.html" target="_blank">Tutorials</a></li>
+              <li><a href="contact.html" target="_blank">Contact</a></li>
+            </ul>
+            <!-- Right Section: Sign Up and Login -->
+
+            <a href="#" class="btn signup-btn">Create Account</a>
+            <a href="#" class="btn login-btn">Login</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contact Us Page -->
+    <section class="contact-us-page">
+      <div class="container">
+        <!-- Page Heading -->
+        <h1>Contact Us</h1>
+
+        <!-- Introduction Section -->
+        <section class="contact-intro">
+          <h2>We'd Love to Hear From You!</h2>
+          <p>
+            If you have any questions, feedback, or inquiries, please feel free
+            to reach out to us. Our team is here to help you with any
+            information you may need regarding our services, courses, or
+            training.
+          </p>
+        </section>
+
+        <!-- Contact Information Section -->
+        <section class="contact-info">
+          <h2>Contact Information</h2>
+          <p>
+            If you prefer to contact us directly, you can reach us through the
+            following channels:
+          </p>
+          <ul>
+            <li><strong>Email:</strong> support@justinebatterdesign.com</li>
+            <li><strong>Phone:</strong> +1 (123) 456-7890</li>
+            <li>
+              <strong>Address:</strong> 123 Design Street, Suite 456, Creativity
+              City, NY 12345
+            </li>
+          </ul>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="contact-form-section">
+          <h2>Send Us a Message</h2>
+          <form action="/send-message" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="name">Your Name:</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="Enter your name"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Your Email:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="Enter your email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject:</label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                required
+                placeholder="Subject of your message"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="Type your message here"
+              ></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send Message</button>
+          </form>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section">
+          <h2>Follow Us on Social Media</h2>
+          <p>
+            Stay connected and follow us on our social media channels for
+            updates, design tips, and more!
+          </p>
+          <ul class="social-media">
+            <li>
+              <a
+                href="https://www.facebook.com/justinebatterdesign"
+                target="_blank"
+                >Facebook</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/justinebatterdesign"
+                target="_blank"
+                >Instagram</a
+              >
+            </li>
+            <li>
+              <a href="https://twitter.com/justinebatterdesign" target="_blank"
+                >Twitter</a
+              >
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="container">
+        <!-- Footer Brand Logo -->
+        <div class="footer-logo">
+          <img src="footer-logo.png" alt="Justine Batter Logo" />
+        </div>
+
+        <!-- Footer Navigation Links -->
+
+        <!-- Footer Info Section -->
+        <div class="footer-info">
+          <p>
+            &copy; 2024 Justine Batter Graphic Design Studio. All Rights
+            Reserved.
+          </p>
+
+          <!-- Social Media Icons -->
+          <div class="social-icons">
+            <a href="#"><img src="facebook-icon.png" alt="Facebook" /></a>
+            <a href="#"><img src="instagram-icon.png" alt="Instagram" /></a>
+            <a href="#"><img src="linkedin-icon.png" alt="LinkedIn" /></a>
+          </div>
+        </div>
+
+        <!-- Download and QR Code Section -->
+        <div class="footer-download">
+          <h4>Get Our App</h4>
+
+          <!-- Google Play Store Icon -->
+          <a href="#">
+            <img src="google-play-icon.png" alt="Download on Google Play" />
+          </a>
+
+          <!-- QR Code for Mobile App -->
+          <div class="qr-code">
+            <h4>Scan for Mobile App</h4>
+            <img src="qr-code.png" alt="QR Code for App" />
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

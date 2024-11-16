@@ -1,0 +1,340 @@
+body {
+  font-family: "Arial", sans-serif; /* Sets the font family */
+  line-height: 1.6; /* Sets line height */
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333; /* Dark grey text color */
+}
+
+.container {
+  width: 90%; /* Adjusted for better responsiveness */
+  max-width: 1200px; /* Max width for larger screens */
+  margin: 0 auto; /* Centers the container */
+}
+
+.navbar {
+  background-color: #4caf50; /* Green background */
+  padding: 15px 0; /* Vertical padding */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between brand and actions */
+  align-items: center; /* Center items vertically */
+}
+
+.brand-logo img {
+  max-height: 50px; /* Limits logo height */
+}
+
+.nav-links {
+  list-style-type: none; /* Removes bullets */
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline; /* Displays links inline */
+  margin-right: 20px; /* Spacing between links */
+}
+
+.nav-links a {
+  color: white; /* White text */
+  text-decoration: none; /* Removes underline */
+  font-weight: bold; /* Bold text */
+}
+
+.nav-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.nav-actions {
+  display: flex; /* Flex container for actions */
+  align-items: center; /* Center items vertically */
+}
+
+/* Button Styles */
+.btn {
+  background-color: #ffffff; /* White background */
+  color: #4caf50; /* Green text */
+  padding: 10px 15px; /* Padding for buttons */
+  border: 2px solid #4caf50; /* Green border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Removes underline */
+  margin-left: 10px; /* Space between buttons */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.btn:hover {
+  background-color: #4caf50; /* Darker green background on hover */
+  color: white; /* White text on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.history-section {
+  padding: 20px; /* Padding */
+  background-color: #ffffff; /* White background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Increased space between image and text */
+  margin-bottom: 20px; /* Space below each section */
+}
+
+.mission-vision-section {
+  padding: 20px; /* Padding */
+  background-color: #ffffff; /* White background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Increased space between image and text */
+  margin-bottom: 20px; /* Space below each section */
+}
+
+.about-intro {
+  padding: 20px; /* Padding */
+  background-color: #ffffff; /* White background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Increased space between image and text */
+  margin-bottom: 20px; /* Space below each section */
+}
+
+.team-member {
+  padding: 20px; /* Padding */
+  background-color: #ffffff; /* White background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Increased space between image and text */
+  margin-bottom: 20px; /* Space below each section */
+  transition: transform 0.3s;
+}
+
+.team-member:hover {
+  transform: translateY(-5px);
+  cursor: pointer;
+}
+
+/* Section headings */
+h1,
+h2,
+h3 {
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+/* About Intro Section */
+.about-intro {
+  display: flex;
+  flex-direction: column; /* Stack elements in a column on small screens */
+  margin-bottom: 40px; /* Space below the section */
+}
+
+.intro-content {
+  flex: 1; /* Allow the content to grow */
+}
+
+.intro-image img {
+  width: 100%; /* Make the image responsive */
+  height: auto; /* Maintain aspect ratio */
+}
+
+@media (min-width: 768px) {
+  .about-intro {
+    flex-direction: row; /* Side by side on larger screens */
+    align-items: center; /* Center items vertically */
+  }
+}
+
+/* History Section */
+.history-section {
+  margin-bottom: 40px; /* Space below the section */
+}
+
+/* Mission & Vision Section */
+.mission-vision-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Stack items on small screens */
+  gap: 20px; /* Space between grid items */
+}
+
+@media (min-width: 768px) {
+  .mission-vision-grid {
+    grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+  }
+}
+
+/* Team Section */
+.team-section {
+  margin-bottom: 40px; /* Space below the section */
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* Stack items on small screens */
+  gap: 20px; /* Space between grid items */
+}
+
+.team-member img {
+  width: 100%; /* Make team member images responsive */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make images round */
+}
+
+@media (min-width: 768px) {
+  .team-grid {
+    grid-template-columns: repeat(3, 1fr); /* Three columns on larger screens */
+  }
+}
+
+/* Why Customers Love Us Section */
+.why-customers-love-us ul {
+  list-style: none; /* Remove default list style */
+  padding: 0; /* Remove default padding */
+}
+
+.why-customers-love-us li {
+  background-color: #ffffff; /* White background for list items */
+  padding: 15px; /* Add padding */
+  margin-bottom: 10px; /* Space between items */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #4caf50; /* Dark footer background */
+  color: #fff; /* White text in footer */
+  padding: 20px 0; /* Padding on top and bottom */
+  text-align: center;
+}
+
+.footer-logo img {
+  max-width: 150px; /* Limit footer logo size */
+  margin-bottom: 15px; /* Space below logo */
+}
+
+.social-icons a img {
+  width: 30px; /* Size for social media icons */
+  margin: 0 5px; /* Space between icons */
+}
+
+.footer-download {
+  margin-top: 20px; /* Space above download section */
+}
+
+.qr-code img {
+  width: 100px; /* Size for QR code */
+  height: auto; /* Maintain aspect ratio */
+}
+
+ul {
+  margin-right: 400px;
+}
+
+/* For tablets (max-width: 768px) */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .nav-links li {
+    width: 100%;
+    text-align: left;
+  }
+
+  .btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .about-intro h2 {
+    font-size: 24px;
+  }
+
+  .about-intro p {
+    font-size: 16px;
+  }
+
+  .team-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-member {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .cta-section {
+    font-size: 18px;
+  }
+}
+
+/* For mobile devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+  }
+
+  .about-intro h2 {
+    font-size: 22px;
+  }
+
+  .about-intro p {
+    font-size: 14px;
+  }
+
+  .team-section {
+    flex-direction: column;
+  }
+
+  .team-member {
+    margin-bottom: 15px;
+  }
+
+  .btn {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .cta-section {
+    font-size: 16px;
+  }
+
+  .footer-info {
+    font-size: 14px;
+  }
+
+  .footer-download img {
+    max-height: 25px;
+  }
+}
+
+/* For extra-small devices (like smartphones) */
+@media (max-width: 320px) {
+  .navbar {
+    padding: 10px 0;
+  }
+
+  .about-intro h2 {
+    font-size: 20px;
+  }
+
+  .about-intro p {
+    font-size: 12px;
+  }
+
+  .btn {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  .cta-section {
+    font-size: 14px;
+  }
+}

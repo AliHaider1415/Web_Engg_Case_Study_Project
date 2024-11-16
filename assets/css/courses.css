@@ -1,0 +1,102 @@
+/* General Body Styling */
+body {
+  background-color: #000; /* Black background */
+  color: #fff; /* White text for contrast */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  margin-top: 100px;
+}
+
+/* Page Heading */
+.courses-page h1 {
+  color: #4d0099; /* Purple theme color */
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Introduction Section */
+.courses-intro h2 {
+  color: #4d0099;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.courses-intro p {
+  color: #d3d3d3; /* Light gray text */
+}
+
+/* Table Section */
+.table-responsive {
+  margin-top: 30px;
+}
+
+.table {
+  background-color: #1c1c1c; /* Dark gray background for the table */
+  border: 1px solid #4d0099;
+}
+
+.table th {
+  background-color: #4d0099;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.table td {
+  color: black; /* Light gray for table data */
+}
+
+.table-hover tbody tr:hover {
+  background-color: #333; /* Slightly lighter row on hover */
+}
+
+.table-bordered {
+  border: 1px solid #4d0099;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #4d0099;
+  border-color: #4d0099;
+  color: #fff;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #6700cc; /* Slightly lighter purple on hover */
+  transform: scale(1.05); /* Subtle zoom effect */
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 10px #4d0099;
+}
+
+/* Call to Action Section */
+.cta-section h2 {
+  color: #4d0099;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  color: #d3d3d3;
+}
+
+.cta-section a {
+  color: #4d0099;
+  text-decoration: underline;
+}
+
+.cta-section a:hover {
+  color: #6700cc;
+  text-decoration: none;
+}

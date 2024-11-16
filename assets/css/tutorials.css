@@ -1,0 +1,292 @@
+body {
+  font-family: "Arial", sans-serif; /* Sets the font family */
+  line-height: 1.6; /* Sets line height */
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333; /* Dark grey text color */
+}
+
+.container {
+  width: 90%; /* Adjusted for better responsiveness */
+  max-width: 1200px; /* Max width for larger screens */
+  margin: 0 auto; /* Centers the container */
+}
+
+ul {
+  margin-right: 400px;
+}
+.navbar {
+  background-color: #4caf50; /* Green background */
+  padding: 15px 0; /* Vertical padding */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between brand and actions */
+  align-items: center; /* Center items vertically */
+}
+
+.brand-logo img {
+  max-height: 50px; /* Limits logo height */
+}
+
+.nav-links {
+  list-style-type: none; /* Removes bullets */
+  padding: 0;
+}
+
+.nav-links li {
+  display: inline; /* Displays links inline */
+  margin-right: 20px; /* Spacing between links */
+}
+
+.nav-links a {
+  color: white; /* White text */
+  text-decoration: none; /* Removes underline */
+  font-weight: bold; /* Bold text */
+}
+
+.nav-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.nav-actions {
+  display: flex; /* Flex container for actions */
+  align-items: center; /* Center items vertically */
+}
+
+/* Button Styles */
+.btn {
+  background-color: #ffffff; /* White background */
+  color: #4caf50; /* Green text */
+  padding: 10px 15px; /* Padding for buttons */
+  border: 2px solid #4caf50; /* Green border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Removes underline */
+  margin-left: 10px; /* Space between buttons */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.btn:hover {
+  background-color: #4caf50; /* Darker green background on hover */
+  color: white; /* White text on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Tutorials Page Styles */
+.tutorials-page {
+  padding: 20px;
+}
+
+.tutorials-intro {
+  margin-bottom: 40px;
+}
+
+.tutorials-intro h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.tutorials-intro p {
+  font-size: 16px;
+}
+
+.featured-tutorials {
+  margin-bottom: 40px;
+}
+
+.featured-tutorials h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.tutorials-grid {
+  display: grid; /* Use CSS Grid */
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* Responsive columns */
+  gap: 20px; /* Space between grid items */
+  padding: 10px; /* Padding around the grid */
+}
+
+.tutorial-item {
+  background-color: #ffffff; /* Background for each item */
+  padding: 20px; /* Padding inside each item */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+.tutorial-card {
+  background-color: #f9f9f9; /* Light background for cards */
+  border: 1px solid #ddd; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 15px; /* Padding inside cards */
+  text-align: center; /* Center text */
+  height: 350px; /* Fixed height for equal sizes */
+  display: flex; /* Use flexbox to align items */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: space-between; /* Distribute space evenly */
+}
+.tutorial-card img {
+  max-width: 100%; /* Responsive image */
+  border-radius: 4px; /* Rounded image corners */
+}
+
+.tutorial-card h3 {
+  font-size: 18px;
+  margin: 10px 0;
+  /* flex-grow: 1; */
+}
+
+.tutorial-card p {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.learn-more-button {
+  display: inline-block; /* Block button */
+  margin-top: 10px; /* Space above button */
+  padding: 10px 15px; /* Button padding */
+  background-color: #4caf50; /* Green button */
+  color: white; /* White text */
+  text-decoration: none; /* No underline */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.learn-more-button:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+.tutorials-categories {
+  margin-bottom: 40px;
+}
+
+.tutorials-categories h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.categories-list {
+  list-style-type: none; /* Removes bullets */
+  padding: 0;
+}
+
+.categories-list li {
+  margin-bottom: 10px; /* Spacing between categories */
+}
+
+.categories-list a {
+  color: #4caf50; /* Green links */
+  text-decoration: none; /* No underline */
+}
+
+.categories-list a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.cta-section {
+  background-color: #f1f1f1; /* Light grey background */
+  padding: 20px; /* Padding for the section */
+  text-align: center; /* Center text */
+  margin-top: 40px; /* Space above section */
+}
+
+.cta-section h2 {
+  font-size: 24px;
+}
+
+.cta-section p {
+  font-size: 16px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  padding: 20px 0; /* Vertical padding */
+}
+
+.footer-logo img {
+  max-height: 40px; /* Limits footer logo height */
+}
+
+.footer-info {
+  text-align: center; /* Center text */
+}
+
+.footer-info p {
+  margin: 10px 0; /* Margin above and below paragraph */
+}
+
+.social-icons {
+  margin: 10px 0; /* Margin above and below icons */
+}
+
+.social-icons a {
+  margin-right: 10px; /* Space between icons */
+}
+
+.footer-download {
+  text-align: center; /* Center text */
+  margin-top: 20px; /* Space above section */
+}
+
+.footer-download h4 {
+  margin-bottom: 10px; /* Space below heading */
+}
+
+.qr-code {
+  margin-top: 10px; /* Space above QR code */
+}
+
+/* Base styles for mobile */
+.tutorials-page {
+  padding: 10px; /* Default padding for mobile */
+}
+
+.tutorials-table {
+  width: 100%; /* Ensure the table takes full width */
+}
+
+.tutorials-table th,
+.tutorials-table td {
+  padding: 10px; /* Adjust padding for smaller screens */
+  font-size: 14px; /* Smaller font size for better readability */
+}
+
+/* Media query for tablets and larger screens */
+@media (min-width: 768px) {
+  .tutorials-page {
+    padding: 20px; /* Increase padding for tablets and larger screens */
+  }
+
+  .tutorials-table th,
+  .tutorials-table td {
+    font-size: 16px; /* Increase font size */
+  }
+}
+
+/* Media query for desktop */
+@media (min-width: 992px) {
+  .tutorials-page {
+    padding: 40px; /* Add more padding for larger screens */
+  }
+
+  .tutorials-table {
+    width: auto; /* Allow table to fit its content */
+  }
+
+  .tutorials-table th,
+  .tutorials-table td {
+    padding: 15px; /* More padding for a spacious look */
+    font-size: 18px; /* Increase font size for better readability */
+  }
+}
+
+/* Media query for very large screens */
+@media (min-width: 1200px) {
+  .tutorials-page {
+    padding: 60px; /* Large padding for spacious layout */
+  }
+}

@@ -1,0 +1,293 @@
+/* Global Styles */
+
+body {
+  font-family: "Arial", sans-serif; /* Sets the font family */
+  line-height: 1.6; /* Sets line height */
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Light grey background */
+  color: #333; /* Dark grey text color */
+  overflow-x: hidden;
+}
+
+.container {
+  width: 90%; /* Adjusted for better responsiveness */
+  max-width: 1200px; /* Max width for larger screens */
+  margin: 0 auto; /* Centers the container */
+}
+
+/* Navbar Styles */
+
+.navbar {
+  background-color: #4caf50; /* Green background */
+  padding: 15px 0; /* Vertical padding */
+  display: flex; /* Use flexbox for alignment */
+  justify-content: space-between; /* Space between brand and actions */
+  align-items: center; /* Center items vertically */
+}
+
+.brand-logo img {
+  max-height: 50px; /* Limits logo height */
+}
+
+.nav-links {
+  list-style-type: none; /* Removes bullets */
+  padding: 0;
+}
+
+ul {
+  margin-right: 400px;
+}
+
+.nav-links li {
+  display: inline; /* Displays links inline */
+  margin-right: 20px; /* Spacing between links */
+}
+
+.nav-links a {
+  color: white; /* White text */
+  text-decoration: none; /* Removes underline */
+  font-weight: bold; /* Bold text */
+}
+
+.nav-links a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.nav-actions {
+  display: flex; /* Flex container for actions */
+  align-items: center; /* Center items vertically */
+}
+
+/* Button Styles */
+.btn {
+  background-color: #ffffff; /* White background */
+  color: #4caf50; /* Green text */
+  padding: 10px 15px; /* Padding for buttons */
+  border: 2px solid #4caf50; /* Green border */
+  border-radius: 5px; /* Rounded corners */
+  text-decoration: none; /* Removes underline */
+  margin-left: 10px; /* Space between buttons */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease,
+    box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.btn:hover {
+  background-color: #4caf50; /* Darker green background on hover */
+  color: white; /* White text on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+/* Search Bar Styles */
+.search-container {
+  background-color: black; /* No background color */
+  /* Space above search */
+  padding: 10px 0; /* Padding around the search container */
+}
+
+/* Container for Search Bar */
+.search-container .container {
+  display: flex; /* Use flexbox for alignment */
+  justify-content: center; /* Center the search box */
+}
+
+/* Search Bar Styles */
+.search-input {
+  padding: 5px; /* Adds padding */
+  margin-right: 10px; /* Space between search input and button */
+  border: 1px solid #ccc; /* Light grey border */
+  border-radius: 5px; /* Rounded corners */
+  outline: none; /* Remove outline */
+  font-size: 16px; /* Font size */
+}
+
+.search-btn {
+  padding: 5px 10px; /* Padding for button */
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  border: none; /* Removes border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.search-btn:hover {
+  background-color: #45a049; /* Darker green on hover */
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  padding: 80px 20px; /* Increased padding for top and bottom */
+  text-align: center; /* Center text */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+}
+
+.hero-cta {
+  margin-top: 30px; /* Increased space above the button */
+}
+
+/* Intro Section Styles */
+.intro-section {
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Center items vertically */
+  margin: 60px 0; /* Increased space above and below */
+}
+
+.intro-image img {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px; /* More rounded corners */
+}
+
+.intro-text {
+  padding: 20px; /* Padding */
+  background-color: #ffffff; /* White background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Increased space between image and text */
+}
+
+/* Business Section Styles */
+
+.business-section-text {
+  padding: 20px; /* Padding */
+  background-color: #ffffff; /* White background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Services Section Styles */
+.services-grid {
+  display: flex; /* Flexbox for services */
+  justify-content: space-between; /* Even spacing */
+  margin-top: 20px; /* Space above services */
+}
+
+.service-item {
+  text-align: center; /* Center text */
+  padding: 20px; /* Padding */
+  background-color: #ffffff; /* White background for each service item */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s; /* Smooth scale effect */
+}
+
+.service-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Courses Section Styles */
+.courses-grid,
+.upcoming-courses-grid,
+.tutorials-grid {
+  display: flex; /* Flexbox for courses */
+  justify-content: space-between; /* Even spacing */
+  margin-top: 20px; /* Space above */
+}
+
+/* Course, Upcoming Course, and Tutorial Item Styles */
+.course-item,
+.upcoming-course-item,
+.tutorial-item {
+  flex: 1; /* Allow items to grow equally */
+  min-width: 200px; /* Set a minimum width for consistency */
+  max-width: 300px; /* Set a maximum width to avoid excessive stretching */
+  text-align: center; /* Center text */
+  padding: 20px; /* Padding */
+  background-color: #ffffff; /* White background */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s; /* Smooth scale effect */
+  margin: 10px; /* Space around items */
+}
+
+.course-item:hover,
+.upcoming-course-item:hover,
+.tutorial-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+.course-btn {
+  display: inline-block; /* Allows padding */
+  margin-top: 10px; /* Space above the button */
+}
+
+/* Testimonials Section Styles */
+.testimonials-grid {
+  display: flex; /* Flexbox for testimonials */
+  justify-content: space-between; /* Even spacing */
+  margin-top: 20px; /* Space above */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #4caf50; /* Green background */
+  color: white; /* White text */
+  padding: 20px 0; /* Padding */
+  text-align: center; /* Center text */
+}
+
+.footer-logo img {
+  max-height: 50px; /* Limit footer logo height */
+}
+
+.social-icons img {
+  max-width: 30px; /* Limit icon size */
+  margin: 0 10px; /* Space between icons */
+}
+
+/* Services Section */
+.services-grid {
+  gap: 20px; /* Gap between service items */
+}
+
+/* Adding Spaces */
+.courses-grid,
+.upcoming-courses-grid,
+.tutorials-grid {
+  gap: 20px; /* Gap between course items */
+}
+
+.testimonials-grid {
+  gap: 20px; /* Gap between testimonial items */
+}
+
+.services-grid,
+.courses-grid,
+.upcoming-courses-grid,
+.tutorials-grid,
+.testimonials-grid {
+  display: flex; /* Ensure flexbox is applied */
+  justify-content: space-between; /* Even spacing between items */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column; /* Stack on small screens */
+    align-items: center; /* Center items */
+  }
+
+  .intro-text {
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center text */
+  }
+
+  .services-grid,
+  .courses-grid,
+  .upcoming-courses-grid,
+  .tutorials-grid {
+    flex-direction: column; /* Stack on small screens */
+  }
+
+  .nav-links li {
+    display: block; /* Stack links vertically */
+    margin-bottom: 10px; /* Space below each link */
+  }
+
+  .nav-actions {
+    float: none; /* Remove float on small screens */
+    text-align: center; /* Center nav actions */
+    margin-top: 10px; /* Space above */
+  }
+}

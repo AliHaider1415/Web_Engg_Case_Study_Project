@@ -1,0 +1,303 @@
+/* General reset for smooth transitions */
+.navbar-nav .nav-link,
+.navbar .form-control,
+.navbar .btn {
+  transition: all 0.3s ease;
+}
+
+/* Search input focus effects */
+.navbar .form-control:focus {
+  box-shadow: 0 0 8px #4d0099;
+  border-color: #4d0099;
+}
+
+/* Search button hover effects */
+.navbar .btn {
+  background-color: #4d0099;
+  color: #fff;
+  border: 1px solid #4d0099;
+}
+
+/* Apply styles to all nav-link elements */
+.navbar .nav-link {
+  position: relative;
+  color: #fff; /* Default color */
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Hover effects for all nav-link elements */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus {
+  color: white; /* Change font color */
+  background-color: transparent; /* Ensure no background is added */
+}
+
+/* Transitioning underline for nav-link elements */
+.navbar .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px; /* Adjust position for thicker border */
+  left: 0;
+  right: 0;
+  height: 6px; /* Thickness of the underline */
+  background-color: #4d0099; /* Change underline color to #4d0099 */
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.navbar .nav-link:hover::after,
+.navbar .nav-link:focus::after {
+  transform: scaleX(1); /* Show underline */
+}
+
+#flexSwitchCheckDefault:checked + .form-check-label {
+    color: #4d0099; /* Color when toggled */
+  }
+  
+  #flexSwitchCheckDefault + .form-check-label {
+    font-size: 20px; /* Adjust the icon size */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+
+
+
+/* Hero Section Styling */
+.hero-section {
+    background-color: #000; /* Black theme */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Hero Title */
+  .hero-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff; /* White text */
+    line-height: 1.2;
+    opacity: 0; /* Initially hidden */
+    animation: fadeIn 1s ease-in forwards; /* Fade-in animation */
+  }
+  
+  /* Keyframes for Fade In */
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Start invisible */
+      transform: translateY(-20px); /* Slight upward movement */
+    }
+    to {
+      opacity: 1; /* Fully visible */
+      transform: translateY(0); /* Original position */
+    }
+  }
+  
+  /* Hero Description */
+  .hero-description {
+    font-size: 1.2rem;
+    color: #ccc; /* Light gray text */
+  }
+  
+  /* Hero Button */
+  .btn-hero {
+    background-color: #4d0099; /* Primary theme color */
+    color: #fff; /* White text */
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-hero:hover {
+    background-color: #fff; /* White on hover */
+    color: #4d0099; /* Theme color text */
+    box-shadow: 0 0 10px #4d0099; /* Glowing effect */
+  }
+  
+
+
+  /* General Styling */
+.intro-section {
+    background-color: black; /* Black background */
+  }
+  
+  /* Intro Text */
+  .intro-section .intro-text {
+    color: white; /* Theme color for headings */
+  }
+  
+  .intro-description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ccc; /* Light gray for paragraph text */
+  }
+  
+  /* Image Styling */
+  .intro-section img {
+    
+    box-shadow: 0 0 10px #4d0099; /* Shadow effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .intro-section img:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    box-shadow: 0 0 20px #4d0099; /* Brighter shadow */
+  }
+  
+/* General Styling for Services Section */
+.services-section {
+    background-color: #000; /* Black background for the section */
+    padding: 5rem 0; /* Adjust the section padding */
+  }
+  
+  /* Card Styles */
+  .card {
+    background-color: #4d0099; /* Purple background for each card */
+    color: #fff; /* White text color inside the card */
+    border-radius: 10px; /* Rounded corners for cards */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Subtle shadow for cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  }
+  
+  /* Card Hover Effect */
+  .card:hover {
+    transform: translateY(-10px); /* Lift effect on hover */
+    box-shadow: 0 0 20px #4d0099; /* Glowing effect */
+  }
+  
+  /* Card Title Styles */
+  .card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff; /* White text for card title */
+  }
+  
+  /* Card Text Styles */
+  .card-text {
+    color: #fff; /* White text for the card description */
+  }
+  
+  /* Button Styles */
+  .btn-primary {
+    background-color: transparent; /* Transparent background */
+    border: 2px solid #4d0099; /* Purple border */
+    color: white; /* Purple text */
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: color 0.3s ease, border-color 0.3s ease; /* Smooth transition */
+  }
+  
+  .btn-primary:hover {
+    background-color: #4d0099; /* Purple background on hover */
+    color: #fff; /* White text on hover */
+    border-color: white; /* Keep the border color purple */
+  }
+
+  
+  .btn-primary::after {
+    width: 0; /* Initially, the border is not visible */
+  }
+  
+  
+  /* Header Styling */
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #fff; /* White text for the section title */
+    text-align: center; /* Center-align the header */
+    margin-bottom: 2rem; /* Add space below the header */
+  }
+
+  /* Make carousel control buttons thicker */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #4d0099;  /* Set the color to #4d0099 */
+  border-radius: 50%;         /* Ensure the buttons remain circular */
+  width: 40px;                /* Increase the width to make it thicker */
+  height: 40px;               /* Increase the height to make it thicker */
+  border: 2px solid #4d0099;  /* Optional: adds border for better visibility */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;  /* Increase the size of the control button container */
+}
+
+/* Optional: Add a hover effect */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: rgba(77, 0, 153, 0.1); /* Light background on hover */
+}
+
+  
+  
+
+  /* Footer styles */
+footer a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+  }
+  
+  footer a:hover {
+    text-decoration: none;
+    color: white;
+  }
+  
+  footer a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    bottom: -3px;
+    left: 0;
+    transition: width 0.3s ease;
+  }
+  
+  footer a:hover::after {
+    width: 100%;
+  }
+  
+
+  /* Modal Styles */
+#courseModal .modal-content {
+    background-color: white; /* Set background color to white */
+    color: black; /* Set text color to black */
+}
+
+/* Modal Header - Customize title color */
+#courseModal .modal-header .modal-title {
+    color: black; /* Set title color to black */
+}
+
+/* Close button customization */
+#courseModal .modal-header .btn-close {
+    background-color: #4d0099; /* Set close button background color */
+    border-radius: 50%; /* Optional: Make the close button round */
+    border: none; /* Remove any border around the close button */
+}
+
+/* Close button hover effect */
+#courseModal .modal-header .btn-close:hover {
+    background-color: #6a1d99; /* Slightly darker shade of the close button color */
+}
+
+/* Modal Footer */
+#courseModal .modal-footer .btn-secondary {
+    background-color: #4d0099; /* Set footer button color */
+    border-color: #4d0099; /* Ensure the border color matches */
+}
+
+#courseModal .modal-footer .btn-secondary:hover {
+    background-color: #6a1d99; /* Darken the button on hover */
+    border-color: #6a1d99;
+}

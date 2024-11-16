@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Graphicology</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../assets/css/index.css" />
+    
+    <!-- Link to external CSS -->
+  </head>
+
+  <body>
+    <!-- Navbar Section -->
+
+    <nav class="navbar fixed-top navbar-expand-lg" id="navbar" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" id="navbarBrand">
+          <img src="../assets/images/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+          Graphicology
+        </a>
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./courses.html">Courses</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Tutorials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Contact</a>
+            </li>
+          </ul>
+    
+          <form class="d-flex me-3" role="search">
+            <!-- Light/Dark Mode Toggle Button -->
+            <div class="form-check form-switch d-flex align-items-center">
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"  onclick="toggleTheme()">
+              <!-- Use the moon icon (🌙) instead of the label -->
+              <label class="form-check-label ms-2" for="flexSwitchCheckDefault">
+                🌞
+              </label>
+              
+            </div>
+    
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="searchInput">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+    
+          <div class="d-flex align-items-center">
+            <a class="nav-link active me-2" aria-current="page" href="#" id="loginLink">Login</a>
+            <a class="nav-link active" aria-current="page" href="#" id="createAccountLink">Create Account</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    
+    
+
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white text-center d-flex align-items-center justify-content-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h1 class="hero-title mb-4">Welcome to Graphicology - <br>Where It's all about Graphics</h1>
+            <p class="hero-description mb-4">
+              Discover creative designs, learn new skills, and enjoy one-on-one training in a relaxing environment.
+            </p>
+            <a href="#" class="btn btn-hero">Explore Our Services</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Intro Section (Image + Intro Text) -->
+    <section class="intro-section py-5 text-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Image Column -->
+          <div class="col-md-6">
+            <img src="../assets/images/intro-img.png" alt="Graphic Design Studio" class="img-fluid rounded shadow-lg">
+          </div>
+          <!-- Text Column -->
+          <div class="col-md-6">
+            <h2 class="intro-text mb-3">About Us</h2>
+            <p class="intro-description">
+              At Justine Batter, we specialize in professional graphic design services, 
+              from printed designs to web projects. Our goal is to bring creativity and 
+              professionalism to every project while maintaining a welcoming atmosphere 
+              for our clients.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Services Section -->
+    <section class="services-section py-5 text-light">
+    <div class="container">
+    <h2 class="text-center mb-5">Our Services</h2>
+    <div class="row g-4">
+      <!-- Service 1: Graphic Design -->
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="../assets/images/graphic-designing.png" class="card-img-top" alt="Graphic Design Icon">
+          <div class="card-body">
+            <h5 class="card-title">Graphic Design</h5>
+            <p class="card-text">
+              Professional designs for both print and web environments.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 2: One-on-One Training -->
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="../assets/images/training.png" class="card-img-top" alt="One-on-One Training Icon">
+          <div class="card-body">
+            <h5 class="card-title">One-on-One Training</h5>
+            <p class="card-text">
+              Personalized training sessions for those looking for in-depth learning.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Service 3: Online Courses -->
+      <div class="col-md-4">
+        <div class="card" style="width: 18rem;">
+          <img src="../assets/images/course.png" class=card-img-top" alt="Online Courses Icon">
+          <div class="card-body">
+            <h5 class="card-title">Online Courses</h5>
+            <p class="card-text">
+              Convenient online courses that you can take from anywhere.
+            </p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    </div>
+    </section>
+
+
+    <!-- Popular Courses Section -->
+    <section class="services-section py-5 text-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Popular Courses</h2>
+        <div class="row g-4">
+    
+          <!-- Course 1 -->
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="intro-graphic-design.jpg" class="card-img-top" alt="Intro to Graphic Design">
+              <div class="card-body">
+                <h5 class="card-title">Intro to Graphic Design</h5>
+                <p class="card-text">A beginner's guide to layout, colors, and typography.</p>
+                <div class="course-rating d-flex align-items-center mb-3">
+                  <img src="rating-stars.png" alt="Rating Stars" style="width: 20px; height: 20px; margin-right: 5px;">
+                  <p class="mb-0">4.8/5</p>
+                </div>
+                <a href="#" class="btn btn-primary">Go to Course</a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Course 2 -->
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="advanced-photoshop.jpg" class="card-img-top" alt="Advanced Photoshop Techniques">
+              <div class="card-body">
+                <h5 class="card-title">Advanced Photoshop Techniques</h5>
+                <p class="card-text">Take your design skills to the next level with Photoshop.</p>
+                <div class="course-rating d-flex align-items-center mb-3">
+                  <img src="rating-stars.png" alt="Rating Stars" style="width: 20px; height: 20px; margin-right: 5px;">
+                  <p class="mb-0">4.7/5</p>
+                </div>
+                <a href="#" class="btn btn-primary">Go to Course</a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Course 3 -->
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="web-design-creatives.jpg" class="card-img-top" alt="Web Design for Creatives">
+              <div class="card-body">
+                <h5 class="card-title">Web Design for Creatives</h5>
+                <p class="card-text">Learn how to create stunning web designs from scratch.</p>
+                <div class="course-rating d-flex align-items-center mb-3">
+                  <img src="rating-stars.png" alt="Rating Stars" style="width: 20px; height: 20px; margin-right: 5px;">
+                  <p class="mb-0">4.9/5</p>
+                </div>
+                <a href="#" class="btn btn-primary">Go to Course</a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Upcoming Courses Section -->
+    <section class="upcoming-courses-section py-5" style="background-color: black; color: #4d0099;">
+      <div class="container">
+        <h2 class="text-center mb-5">Upcoming Courses</h2>
+        <div id="upcomingCoursesCarousel" class="carousel slide" data-bs-ride="carousel">
+          
+          <!-- Indicators -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#upcomingCoursesCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#upcomingCoursesCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          </div>
+
+          <!-- Carousel Items -->
+          <div class="carousel-inner">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row justify-content-center">
+                <!-- Course 1 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card text-center" style="background-color: #4d0099; color: white; height: 350px;">
+                    <img src="../assets/images/motion-graphics.jpg" class="card-img-top" alt="Mastering Illustrator" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                      <h5 class="card-title">Mastering Illustrator</h5>
+                      <p class="card-text">Starting November 10th</p>
+                      <a href="#" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Course 2 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card text-center" style="background-color: #4d0099; color: white; height: 350px;">
+                    <img src="../assets/images/creative-branding.jpg" class="card-img-top" alt="Creative Branding" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                      <h5 class="card-title">Creative Branding</h5>
+                      <p class="card-text">Starting December 1st</p>
+                      <a href="#" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Course 3 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card text-center" style="background-color: #4d0099; color: white; height: 350px;">
+                    <img src="../assets/images/creative-branding.jpg" class="card-img-top" alt="Creative Branding" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                      <h5 class="card-title">Creative Branding</h5>
+                      <p class="card-text">Starting December 1st</p>
+                      <a href="#" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row justify-content-center">
+                <!-- Course 4 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card text-center" style="background-color: #4d0099; color: white; height: 350px;">
+                    <img src="../assets/images/photography.jpg" class="card-img-top" alt="Advanced Photography" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                      <h5 class="card-title">Advanced Photography</h5>
+                      <p class="card-text">Starting January 15th</p>
+                      <a href="#" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Course 5 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card text-center" style="background-color: #4d0099; color: white; height: 350px;">
+                    <img src="../assets/images/motion-graphics.jpg" class="card-img-top" alt="Motion Graphics" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                      <h5 class="card-title">Motion Graphics</h5>
+                      <p class="card-text">Starting February 20th</p>
+                      <a href="#" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- Course 6 -->
+                <div class="col-md-4 mb-4">
+                  <div class="card text-center" style="background-color: #4d0099; color: white; height: 350px;">
+                    <img src="../assets/images/creative-photography.jpg" class="card-img-top" alt="Creative Photography" style="height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                      <h5 class="card-title">Creative Photography</h5>
+                      <p class="card-text">Starting March 10th</p>
+                      <a href="#" class="btn btn-primary view-details">View Details</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Controls -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#upcomingCoursesCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#upcomingCoursesCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    
+    <section class="services-section py-5 text-light">
+      <div class="container">
+        <h2 class="text-center mb-5">Famous Tutorials</h2>
+        <div class="row g-4">
+    
+          <!-- Tutorial 1 -->
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="layout-design-basics.jpg" class="card-img-top" alt="Layout Design Basics">
+              <div class="card-body">
+                <h5 class="card-title">Layout Design Basics</h5>
+                <p class="card-text">Learn the foundations of great layout design.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Tutorial 2 -->
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="importance-of-colors.jpg" class="card-img-top" alt="Importance of Colors">
+              <div class="card-body">
+                <h5 class="card-title">Importance of Colors</h5>
+                <p class="card-text">Discover how to use color theory in your designs.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Tutorial 3 -->
+          <div class="col-md-4">
+            <div class="card" style="width: 18rem;">
+              <img src="backup-design-files.jpg" class="card-img-top" alt="Backing Up Your Design Files">
+              <div class="card-body">
+                <h5 class="card-title">Backing Up Your Design Files</h5>
+                <p class="card-text">Ensure your work is safe by learning essential backup methods.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+  
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section py-5" style="background-color: black; color: #4d0099;">
+      <div class="container">
+        <h2 class="text-center mb-4">What Our Clients Say</h2>
+        <div class="accordion" id="testimonialsAccordion">
+          <!-- Testimonial 1 -->
+          <div class="accordion-item" style="background-color: #4d0099; color: white;">
+            <h2 class="accordion-header" id="headingOne">
+              <button
+                class="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="true"
+                aria-controls="collapseOne"
+                style="background-color: #4d0099; color: white;"
+              >
+                “The teaching and instruction are absolutely dynamic...”
+              </button>
+            </h2>
+            <div
+              id="collapseOne"
+              class="accordion-collapse collapse show"
+              aria-labelledby="headingOne"
+              data-bs-parent="#testimonialsAccordion"
+            >
+              <div class="accordion-body">
+                The teaching and instruction are absolutely dynamic and suited to
+                all skill levels.
+                <h4 class="mt-3">— Client Name</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 2 -->
+          <div class="accordion-item" style="background-color: #4d0099; color: white;">
+            <h2 class="accordion-header" id="headingTwo">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="false"
+                aria-controls="collapseTwo"
+                style="background-color: #4d0099; color: white;"
+              >
+                “I loved the relaxing atmosphere...”
+              </button>
+            </h2>
+            <div
+              id="collapseTwo"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingTwo"
+              data-bs-parent="#testimonialsAccordion"
+            >
+              <div class="accordion-body">
+                I loved the relaxing atmosphere and the creative approach they bring
+                to everything.
+                <h4 class="mt-3">— Client Name</h4>
+              </div>
+            </div>
+          </div>
+
+          <!-- Testimonial 3 -->
+          <div class="accordion-item" style="background-color: #4d0099; color: white;">
+            <h2 class="accordion-header" id="headingThree">
+              <button
+                class="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="false"
+                aria-controls="collapseThree"
+                style="background-color: #4d0099; color: white;"
+              >
+                “Their personalized training helped...”
+              </button>
+            </h2>
+            <div
+              id="collapseThree"
+              class="accordion-collapse collapse"
+              aria-labelledby="headingThree"
+              data-bs-parent="#testimonialsAccordion"
+            >
+              <div class="accordion-body">
+                Their personalized training helped me advance my design skills
+                quickly.
+                <h4 class="mt-3">— Client Name</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="py-5" style="background-color: #4d0099; color: white;">
+      <div class="container">
+        <div class="row">
+          <!-- Footer Brand and Logo -->
+          <div class="col-md-4 mb-4">
+            <div class="footer-logo text-center text-md-start">
+              <img src="../assets/images/logo.png" alt="Logo" width="50" height="50" class="img-fluid mb-3">
+              <p>
+                &copy; 2024 Justine Batter Graphic Design Studio. All Rights Reserved.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Footer Navigation Links (Quick Links) -->
+          <div class="col-md-3 mb-4">
+            <h5 class="text-center text-md-start">Quick Links</h5>
+            <ul class="list-unstyled text-center text-md-start">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+    
+          <!-- Footer Navigation Links (Other Links) -->
+          <div class="col-md-3 mb-4">
+            <h5 class="text-center text-md-start">Other Links</h5>
+            <ul class="list-unstyled text-center text-md-start">
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Testimonials</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+    
+          <!-- Social Media and App Section -->
+          <div class="col-md-2 mb-4">
+            <h5 class="text-center text-md-start">Connect With Us</h5>
+            <div class="d-flex justify-content-center justify-content-md-start gap-3 mb-3">
+              <a href="#" class="text-white" style="font-size: 1.5rem;"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-white" style="font-size: 1.5rem;"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-white" style="font-size: 1.5rem;"><i class="bi bi-linkedin"></i></a>
+            </div>
+            <h5 class="text-center text-md-start">Get Our App</h5>
+            <div class="d-flex align-items-center justify-content-center justify-content-md-start">
+              <a href="#"><img src="google-play-icon.png" alt="Google Play" class="img-fluid me-3" style="max-width: 120px;" /></a>
+              <div>
+                <h6>Scan for Mobile App</h6>
+                <img src="qr-code.png" alt="QR Code" class="img-fluid" style="max-width: 80px;" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+
+
+    <!-- Modal Structure -->
+    <div class="modal fade" id="courseModal" tabindex="-1" aria-labelledby="courseModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="courseModalLabel">Course Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <!-- Course Info -->
+            <h5 id="modalCourseTitle"></h5>
+            <p id="modalCourseDescription"></p>
+            <p><strong>Starting Date:</strong> <span id="modalCourseStartDate"></span></p>
+            <p><strong>Price:</strong> <span id="modalCoursePrice"></span></p>
+    
+            <!-- Packages Table -->
+            <h5 class="mt-4">Available Packages</h5>
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>Package</th>
+                  <th>Price</th>
+                  <th>Features</th>
+                  <th>Duration</th>
+                  <th>Tentative Starting Date</th>
+                </tr>
+              </thead>
+              <tbody id="modalPackageTable">
+                <!-- Dynamic package rows will be injected here -->
+              </tbody>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+
+    
+
+  
+
+
+
+    <script src = "../assets/scripts/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+  
+  </body>
+</html>
